@@ -1,8 +1,7 @@
+> Book: JUST ENOUGH SOFTWARE ARCHITECTURE - _A RISK DRIVEN APPROACH_
+
 ## Week 1 - Introduction
 ---
-### Book
-JUST ENOUGH SOFTWARE ARCHITECTURE - _A RISK DRIVEN APPROACH_
-
 ### Partitioning, knowledge, abstraction
 Three parts of software architecture.
 
