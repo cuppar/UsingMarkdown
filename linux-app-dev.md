@@ -25,20 +25,25 @@ features:
 
 ### Linux Basic Command
 #### help command
-`命令名 --help`  
-`man 命令名`  
-`info 命令名`: online help  
-`whoami`: show user's id  
-`hostname`: ...  
-`unanme`: show name of os
+- 查看命令帮助：`命令名 --help`  
+- 查看命令帮助：`man 命令名`
+- 在线帮助：`info 命令名`
+- 显示用户id：`whoami`
+- 显示主机名称：`hostname`
+- 显示操作系统名称：`unanme`
 
-#### file system command
-`mount [参数] 设备名 挂载目录`  
-`umount 卸载目录`  
-`ls -al`: 显示所有文件以及详细信息  
-`rmdir 目录名`: 删除**空**目录  
-`mv [参数] file1 file2`: 重命名或移动位置
-`rm [参数] file-list`: 删除文件  
+#### 文件系统命令
+mount / umount 命令
+- 挂载：`mount [参数] 设备名 挂载目录`
+- 卸载：`umount 卸载目录`
+
+ls 命令  
+- 显示所有文件以及详细信息：`ls -al`
+
+rmdir / mv / rm 命令
+- 删除**空**目录：`rmdir 目录名`  
+- 重命名或移动位置：`mv [参数] file1 file2`
+- 删除文件：`rm [参数] file-list`
 
 chmod 命令
 - 更改文件或目录的访问权限，使用者是root或文件的所有者
