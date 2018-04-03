@@ -220,3 +220,22 @@ high-level language A --> Compiler --> equivalent assembly language or machine l
 - 有穷自动机分为两类：
   - 确定有穷自动机DFA - Deterministic Finite Automata
   - 不确定有穷自动机NFA - Nondeterministic Finite Automata
+  - 都由五元组定义，区别在于映射函数不同（幂集）
+- DFA表示方式
+  - 状态转换图
+    - 初态：==>◯
+    - 终态：◎
+  - 转换矩阵
+- DFA的作用：识别字符串
+- NFA的不同之处
+  - 转换条件是串，结果是幂集
+  - 初态是一个集合
+- DFA与NFA的联系
+  - DFA是NFA的特例
+  - 对于每个NFA M, 存在一个DFA M', 使得L(M) = L(M')
+- 自动机的等价
+  - 对于任何两个又穷自动机M和M', 如果L(M) = L(M')，则称M与M'是等价的
+- NFA -> DFA的转换
+  1. 求状态集合的空串闭包：减少初态数量
+  2. 求Ia，合并状态
+  3. 化简（最小化）
