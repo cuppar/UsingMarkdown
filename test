@@ -1,0 +1,22 @@
+function sumLeftNodeOfBinTree(arr, root, layer){
+  let offset = layer === 0 ? root : root % (2**layer - 1);
+  let leftChild = root + 2**layer + offset;
+  let rightChild = leftChild + 1;
+  let leftSum = 0;
+  let rightSum = 0;
+  
+  if(leftChild < arr.length && arr[leftChild] !== null && arr[leftChild] !== undefined){
+    leftSum = sumLeftNodeOfBinTree(arr, leftChild, layer + 1);
+  }
+  if(rightChild < arr.length && arr[rightChild] !== null && arr[rightChild] !== undefined){
+    rightSum = sumLeftNodeOfBinTree(arr, rightChild, layer + 1);
+  }
+  if(leftChild < arr.length && arr[leftChild] !== null && arr[leftChild] !== undefined){
+    return leftSum + rightSum + arr[leftChild];
+  }
+  return leftSum + rightSum;
+}
+let arr = [0, 1, 2, null, 7];
+// let arr = [0, 1, 2, 3];
+let sum = sumLeftNodeOfBinTree(arr, 0, 0);
+console.log('sum:', sum);
